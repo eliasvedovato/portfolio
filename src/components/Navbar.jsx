@@ -23,27 +23,27 @@ const Navbar = () => {
 			<div>MyPortfolio </div>
 
 			<ul className='hidden md:flex'>
-				<li>
+				<li className='shadow-links'>
 					<Link to='home' smooth={true} duration={500}>
 						Home
 					</Link>
 				</li>
-				<li>
+				<li className='shadow-links'>
 					<Link to='about' smooth={true} duration={500}>
 						About
 					</Link>
 				</li>
-				<li>
+				<li className='shadow-links'>
 					<Link to='skills' smooth={true} duration={500}>
 						Skills
 					</Link>
 				</li>
-				<li>
+				<li className='shadow-links'>
 					<Link to='work' smooth={true} duration={500}>
 						Work
 					</Link>
 				</li>
-				<li>
+				<li className='shadow-links'>
 					<Link to='contact' smooth={true} duration={500}>
 						Contact
 					</Link>
@@ -62,7 +62,7 @@ const Navbar = () => {
 						: 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
 				}
 			>
-				<li className='py-6 text-4xl'>
+				<li className='py-6 text-4xl hover:underline'>
 					<Link
 						onClick={handleClick}
 						to='home'
@@ -72,7 +72,7 @@ const Navbar = () => {
 						Home
 					</Link>
 				</li>
-				<li className='py-6 text-4xl'>
+				<li className='py-6 text-4xl hover:underline'>
 					{' '}
 					<Link
 						onClick={handleClick}
@@ -83,7 +83,7 @@ const Navbar = () => {
 						About
 					</Link>
 				</li>
-				<li className='py-6 text-4xl'>
+				<li className='py-6 text-4xl hover:underline'>
 					{' '}
 					<Link
 						onClick={handleClick}
@@ -94,7 +94,7 @@ const Navbar = () => {
 						Skills
 					</Link>
 				</li>
-				<li className='py-6 text-4xl'>
+				<li className='py-6 text-4xl hover:underline'>
 					{' '}
 					<Link
 						onClick={handleClick}
@@ -105,7 +105,7 @@ const Navbar = () => {
 						Work
 					</Link>
 				</li>
-				<li className='py-6 text-4xl'>
+				<li className='py-6 text-4xl hover:underline'>
 					{' '}
 					<Link
 						onClick={handleClick}
