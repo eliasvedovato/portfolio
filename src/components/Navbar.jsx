@@ -22,7 +22,7 @@ const Navbar = () => {
 		>
 			<div>MyPortfolio </div>
 
-			<ul className='hidden md:flex'>
+			<ul className='hidden sm:flex'>
 				<li className='shadow-links'>
 					<Link to='home' smooth={true} duration={500}>
 						Home
@@ -50,7 +50,7 @@ const Navbar = () => {
 				</li>
 			</ul>
 
-			<div onClick={handleClick} className='md:hidden z-10'>
+			<div onClick={handleClick} className='sm:hidden z-10'>
 				{!nav ? <FaBars /> : <FaTimes />}
 			</div>
 

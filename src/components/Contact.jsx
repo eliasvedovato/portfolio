@@ -4,7 +4,7 @@ const Contact = () => {
 	return (
 		<div
 			name='contact'
-			className='w-full h-screen bg-[#0a192f] flex justify-center items-center p-4'
+			className='w-full min-h-screen bg-[#0a192f] flex justify-center items-center p-4'
 		>
 			<form
 				method='POST'
@@ -28,18 +28,21 @@ const Contact = () => {
 					type='text'
 					placeholder='Name'
 					name='name'
+					required
 				/>
 				<input
 					className='my-4 p-2 bg-[#ccd6f6]'
 					type='email'
 					placeholder='Email'
 					name='email'
+					required
 				/>
 				<textarea
 					className='bg-[#ccd6f6] p-2'
 					name='message'
 					rows='10'
 					placeholder='Message'
+					required
 				></textarea>
 				<button
 					className='text-white border-2 hover:bg-pink-600 
