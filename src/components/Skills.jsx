@@ -5,7 +5,7 @@ import CSS from '../assets/css.png'
 import JavaScript from '../assets/javascript.png'
 import ReactImg from '../assets/react.png'
 import Node from '../assets/node.png'
-import FireBase from '../assets/firebase.png'
+import Next from '../assets/next.png'
 import GitHub from '../assets/github.png'
 import Tailwind from '../assets/tailwind.png'
 
@@ -86,10 +86,10 @@ const Skills = () => {
 					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
 						<img
 							className='w-20 mx-auto'
-							src={FireBase}
+							src={Next}
 							alt='HTML icon'
 						/>
-						<p className='my-4'>FIREBASE</p>
+						<p className='my-4'>NEXT JS</p>
 					</div>
 				</div>
 			</div>
