@@ -2,6 +2,7 @@ import NikeStore from '../assets/projects/nike-store.png'
 import WatchesEcomm from '../assets/projects/watches-website.png'
 import LandingPage from '../assets/projects/landing-page.png'
 import RickAndMortyAPI from '../assets/projects/rick-and-morty-API.png'
+import TodoApp from '../assets/projects/notas.png'
 
 export const data = [
 	{
@@ -31,5 +32,12 @@ export const data = [
 		image: RickAndMortyAPI,
 		github: 'https://github.com/eliasvedovato/watches-ecommerce',
 		live: 'https://watches-ecommerce.vercel.app',
+	},
+	{
+		id: 5,
+		name: 'React JS Application',
+		image: TodoApp,
+		github: 'https://github.com/eliasvedovato/todo-app',
+		live: 'https://todo-app-ten-drab.vercel.app/',
 	},
 ]
