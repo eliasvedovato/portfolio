@@ -3,7 +3,6 @@ import WatchesEcomm from '../assets/projects/watches-website.png'
 import LandingPage from '../assets/projects/landing-page.png'
 import RickAndMortyAPI from '../assets/projects/rick-and-morty-API.png'
 import TodoApp from '../assets/projects/notas.png'
-import EmployeeApp from '../assets/projects/employee.png'
 
 export const data = [
 	{
@@ -40,12 +39,5 @@ export const data = [
 		image: TodoApp,
 		github: 'https://github.com/eliasvedovato/todo-app',
 		live: 'https://todo-app-ten-drab.vercel.app/',
-	},
-	{
-		id: 6,
-		name: 'Employee Management',
-		image: EmployeeApp,
-		github: 'https://github.com/eliasvedovato/employee-management',
-		live: 'https://employee-management-kq2q.vercel.app/',
 	},
 ]
