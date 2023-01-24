@@ -48,7 +48,7 @@ const Navbar = () => {
 			</ul>
 
 			<div onClick={handleClick} className='sm:hidden z-10'>
-				{!nav ? <FaBars /> : <FaTimes />}
+				{!nav ? <FaBars size={25} style={{cursor: 'pointer'}} /> : <FaTimes size={25} style={{cursor: 'pointer'}} />}
 			</div>
 
 			{/* mobile menu */}
