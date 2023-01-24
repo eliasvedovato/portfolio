@@ -12,18 +12,18 @@ const Work = () => {
 				className='max-w-[1000px] mx-auto p-12 flex flex-col 
       justify-center w-full h-full'
 			>
-				<div className='pb-8'>
+				<div className='pb-'>
 					<p
 						className='text-4xl font-bold inline border-b-4 
           text-gray-300 border-pink-600'
 					>
 						Work
 					</p>
-					<p className='py-6'>Check out some of my recent work</p>
+					<p className='py-6'>Check out some of my recent works</p>
 				</div>
 
 				{/* container for projects */}
-				<div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4'>
+				<div className='grid grid-col md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-3'>
 					{/* Grid Item */}
 					{project.map((item, index) => (
 						<div className='flex flex-col items-center'>
@@ -41,7 +41,7 @@ const Work = () => {
 									<span className='text-2xl font bold text-white tracking-wider '>
 										{item.name}
 									</span>
-									<div className='pt-2 text-center '>
+									<div className='text-center flex justify-center'>
 										{/* eslint-disable-next-line */}
 										<a href={item.github} target='_blank'>
 											<button
@@ -52,24 +52,22 @@ const Work = () => {
 											</button>
 										</a>
 										{/* eslint-disable-next-line */}
-										
+										<a
+											href={item.live}
+											className=''
+											target='_blank'
+										>
+											<button
+												className='text-center rounded-lg px-4 py-2 m-2
+                     bg-white text-gray-700 font-bold text-lg'
+											>
+												Live
+											</button>
+										</a>
 									</div>
 								</div>
 							</div>
-							<div>
-								<a
-									href={item.live}
-									className=''
-									target='_blank'
-								>
-									<button
-										className='text-center rounded-lg px-4 py-2 m-2
-                     bg-white text-gray-700 font-bold text-lg'
-									>
-										Live
-									</button>
-								</a>
-							</div>
+							<div></div>
 						</div>
 					))}
 				</div>
