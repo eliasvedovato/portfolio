@@ -1,12 +1,5 @@
 import React, { useState } from 'react'
-import {
-	FaBars,
-	FaTimes,
-	FaGithub,
-	FaLinkedin,
-} from 'react-icons/fa'
-import { HiOutlineMail } from 'react-icons/hi'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { Link } from 'react-scroll'
 
 const Navbar = () => {
@@ -20,7 +13,11 @@ const Navbar = () => {
         flex justify-between items-center 
         px-4 bg-[#0a192f] text-gray-300'
 		>
-			<div>MyPortfolio </div>
+			<div>
+				<Link to='home' smooth={true} duration={500} className='name-effect'>
+					Elias
+				</Link>
+			</div>
 
 			<ul className='hidden sm:flex'>
 				<li className='shadow-links'>
@@ -119,7 +116,7 @@ const Navbar = () => {
 			</ul>
 
 			{/* social icons */}
-			<div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+			<div className='hidden lg:flex fixed flex-col top-[70%] left-0'>
 				<ul>
 					<li
 						className='w-[160px] h-[60px] flex justify-between items-center
@@ -127,7 +124,7 @@ const Navbar = () => {
 					>
 						<a
 							className='flex justify-between items-center w-full text-gray-300'
-							href='/'
+							href='https://www.linkedin.com/in/elias-vedovato-3a35277a/'
 						>
 							Linkedin <FaLinkedin size={30} />
 						</a>
@@ -138,31 +135,9 @@ const Navbar = () => {
 					>
 						<a
 							className='flex justify-between items-center w-full text-gray-300'
-							href='/'
+							href='https://github.com/eliasvedovato'
 						>
 							Github <FaGithub size={30} />
-						</a>
-					</li>
-					<li
-						className='w-[160px] h-[60px] flex justify-between items-center
-					ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'
-					>
-						<a
-							className='flex justify-between items-center w-full text-gray-300'
-							href='/'
-						>
-							Email <HiOutlineMail size={30} />
-						</a>
-					</li>
-					<li
-						className='w-[160px] h-[60px] flex justify-between items-center
-					ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'
-					>
-						<a
-							className='flex justify-between items-center w-full text-gray-300'
-							href='/'
-						>
-							Resume <BsFillPersonLinesFill size={30} />
 						</a>
 					</li>
 				</ul>

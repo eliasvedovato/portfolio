@@ -29,9 +29,33 @@
 	) !important;
 }
 
-.shadow-links:hover{
-	text-shadow: 0 0 5px #c747a3,
-	0 0 15px #c747a3,
-	0 0 25px #c747a3,
-	0 0 35px #c747a3;
+.shadow-links:hover {
+	text-shadow: 0 0 5px #c747a3, 0 0 15px #c747a3, 0 0 25px #c747a3,
+		0 0 35px #c747a3;
+}
+
+.name-effect{
+	color: inherit;
+	font-size: 3rem;
+	cursor: progress;
+	text-decoration: none;
+	background: linear-gradient(
+			to right,
+			rgb(7, 63, 193),
+			rgb(8, 238, 219)
+		),
+		linear-gradient(
+			to right,
+			rgba(255, 0, 0, 1),
+			rgba(255, 0, 180, 1),
+			rgba(0, 100, 200, 1)
+		);
+	background-size: 100% 3px, 0 3px;
+	background-position: 100% 100%, 0 100%;
+	background-repeat: no-repeat;
+	transition: background-size 400ms;
+}
+
+.name-effect:hover{
+	background-size: 0 3px, 100% 3px;
 }

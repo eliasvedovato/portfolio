@@ -4,7 +4,6 @@ import { data } from '../data/data.js'
 const Work = () => {
 	// projects file
 	const project = data
-	// setProject(data);
 
 	return (
 		<div name='work' className='w-full h-screen text-gray-300 bg-[#0a192f]'>
