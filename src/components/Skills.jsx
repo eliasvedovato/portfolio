@@ -10,6 +10,8 @@ import GitHub from '../assets/github.png'
 import Tailwind from '../assets/tailwind.png'
 import Redux from '../assets/redux.png'
 import Firebase from '../assets/firebase.png'
+import Sass from '../assets/sass.png'
+import Typescript from '../assets/typescript.svg'
 
 const Skills = () => {
 	return (
@@ -47,6 +49,14 @@ const Skills = () => {
 					</div>
 					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
 						<img
+							className='w-20 mx-auto rounded-[50%]'
+							src={Sass}
+							alt='HTML icon'
+						/>
+						<p className='my-4'>SASS</p>
+					</div>
+					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+						<img
 							className='w-20 mx-auto'
 							src={JavaScript}
 							alt='HTML icon'
@@ -56,10 +66,10 @@ const Skills = () => {
 					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
 						<img
 							className='w-20 mx-auto'
-							src={ReactImg}
+							src={Node}
 							alt='HTML icon'
 						/>
-						<p className='my-4'>REACT</p>
+						<p className='my-4'>NODE JS</p>
 					</div>
 					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
 						<img
@@ -72,10 +82,10 @@ const Skills = () => {
 					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
 						<img
 							className='w-20 mx-auto'
-							src={Node}
+							src={ReactImg}
 							alt='HTML icon'
 						/>
-						<p className='my-4'>NODE JS</p>
+						<p className='my-4'>REACT</p>
 					</div>
 					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
 						<img
@@ -108,6 +118,14 @@ const Skills = () => {
 							alt='HTML icon'
 						/>
 						<p className='my-4'>FIREBASE</p>
+					</div>
+					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+						<img
+							className='w-20 mx-auto rounded-[50%]'
+							src={Typescript}
+							alt='HTML icon'
+						/>
+						<p className='my-4'>TYPESCRIPT</p>
 					</div>
 				</div>
 			</div>

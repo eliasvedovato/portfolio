@@ -21,11 +21,12 @@ const Work = () => {
 					<p className='py-6'>Check out some of my recent works</p>
 				</div>
 
+				{/*  */}
 				{/* container for projects */}
 				<div className='grid grid-col md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-3'>
 					{/* Grid Item */}
 					{project.map((item, index) => (
-						<div className='flex flex-col items-center'>
+						<div className='flex flex-col items-center gap-5 relative'>
 							<div
 								key={index}
 								style={{
@@ -36,35 +37,35 @@ const Work = () => {
 							h-[100px] md:h-[150px] lg:h-[250px]'
 							>
 								{/* Hover effect for images */}
-								<div className='opacity-0 group-hover:opacity-100 '>
-									<span className='text-2xl font bold text-white tracking-wider '>
+								<div className='opacity-0 group-hover:opacity-100'>
+									<span className='text-2xl font bold text-white tracking-wider'>
 										{item.name}
 									</span>
-									<div className='text-center flex justify-center'>
-										{/* eslint-disable-next-line */}
-										<a href={item.github} target='_blank'>
-											<button
-												className='text-center rounded-lg px-4 py-2 m-2
-                     bg-white text-gray-700 font-bold text-lg'
-											>
-												Code
-											</button>
-										</a>
-										{/* eslint-disable-next-line */}
-										<a
-											href={item.live}
-											className=''
-											target='_blank'
-										>
-											<button
-												className='text-center rounded-lg px-4 py-2 m-2
-                     bg-white text-gray-700 font-bold text-lg'
-											>
-												Live
-											</button>
-										</a>
-									</div>
 								</div>
+							</div>
+							<div className='text-center flex justify-center absolute bottom-[-15px]'>
+								{/* eslint-disable-next-line */}
+								<a href={item.github} target='_blank'>
+									<button
+										className='text-center rounded-lg px-4 py-2 m-2
+                     bg-gray-600 text-white font-bold text-lg'
+									>
+										Github
+									</button>
+								</a>
+								{/* eslint-disable-next-line */}
+								<a
+									href={item.live}
+									className=''
+									target='_blank'
+								>
+									<button
+										className='text-center rounded-lg px-4 py-2 m-2
+                    bg-blue-600 text-white font-bold text-lg'
+									>
+										Live
+									</button>
+								</a>
 							</div>
 							<div></div>
 						</div>
