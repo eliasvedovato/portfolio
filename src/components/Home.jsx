@@ -35,7 +35,8 @@ const Home = () => {
 			</div>
 
 			<img
-				className='absolute rounded-[50%] h-[200px] md:h-[250px] lg:h-[300px] xl:right-[25%] lg:right-[15%] md:right-[8%] top-[15%] right-[5%] shadow-picture'
+				className='absolute rounded-[50%] h-[200px] md:h-[250px] lg:h-[300px] 
+				xl:right-[25%] lg:right-[15%] md:right-[8%] top-[10%] right-[5%] shadow-picture'
 				src={Me}
 				alt='profile picture'
 			/>
