@@ -18,7 +18,7 @@ export const data = [
 		name: 'Website',
 		image: WatchesEcomm,
 		github: 'https://github.com/eliasvedovato/rick_and_morty_api',
-		live: 'https://eliasvedovato.github.io/rick_and_morty_api/',
+		live: 'https://watches-ecommerce.vercel.app',
 	},
 	{
 		id: 3,
@@ -32,7 +32,7 @@ export const data = [
 		name: 'Data Fetching',
 		image: RickAndMortyAPI,
 		github: 'https://github.com/eliasvedovato/watches-ecommerce',
-		live: 'https://watches-ecommerce.vercel.app',
+		live: 'https://eliasvedovato.github.io/rick_and_morty_api/',
 	},
 	{
 		id: 5,
