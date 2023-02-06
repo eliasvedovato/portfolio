@@ -22,11 +22,12 @@
 }
 
 .content-div:hover {
-	background-image: linear-gradient(
+	/* background-image: linear-gradient(
 		to right,
 		rgba(112, 157, 255, 0.8),
 		hsla(242, 74%, 61%, 0.8)
-	) !important;
+	) !important; */
+	cursor: grab;
 }
 
 .shadow-links:hover {
@@ -35,9 +36,14 @@
 }
 
 .shadow-picture:hover{
-	box-shadow: 0 5px 35px #c747a3, 0 0 555px #c747a3, 0 0 755px #c747a3,
+	box-shadow: 0 5px 35px #242d6c, 0 0 555px #c747a3, 0 0 755px #2f3b91,
 		0 0 35px #c747a3;
-		cursor: pointer
+		cursor: pointer;
+}
+
+.imgs{
+	overflow: hidden;
+	z-index: -0.5;
 }
 
 .name-effect{
@@ -48,13 +54,13 @@
 	background: linear-gradient(
 			to right,
 			rgb(7, 63, 193),
-			rgb(8, 238, 219)
+			rgb(221, 94, 247)
 		),
 		linear-gradient(
 			to right,
-			rgb(45, 46, 50),
-			rgb(52, 26, 156),
-			rgba(0, 100, 200, 1)
+			rgb(25, 181, 229),
+			rgb(35, 107, 206),
+			rgb(16, 58, 210)
 		);
 	background-size: 100% 3px, 0 3px;
 	background-position: 100% 100%, 0 100%;

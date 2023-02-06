@@ -1,5 +1,3 @@
-import React from 'react'
-
 import HTML from '../assets/html.png'
 import CSS from '../assets/css.png'
 import JavaScript from '../assets/javascript.png'
@@ -13,11 +11,22 @@ import Firebase from '../assets/firebase.png'
 import Sass from '../assets/sass.png'
 import Typescript from '../assets/typescript.svg'
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+// Import Swiper styles
+import 'swiper/css'
+import 'swiper/css/effect-coverflow'
+import 'swiper/css/pagination'
+
+// import required modules
+import { EffectCoverflow, Pagination } from "swiper";
+
 const Skills = () => {
 	return (
 		<div
 			name='skills'
-			className='w-full h-screen bg-[#0a192f] text-gray-300'
+			className='w-full h-screen bg-[#132d54] text-gray-300'
 		>
 			{/* Container */}
 			<div className='max-w-[1000px] mx-auto p-12 flex flex-col justify-center w-full h-full'>
@@ -30,104 +39,119 @@ const Skills = () => {
 					</p>
 				</div>
 
-				<div className='w-full grid grid-cols-3 lg:grid-cols-5 md:grid-cols-4 gap-4 text-center py-8'>
-					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+				<Swiper
+					effect={'coverflow'}
+					grabCursor={true}
+					centeredSlides={false}
+					slidesPerView={3}
+					coverflowEffect={{
+						rotate: 30,
+						stretch: 20,
+						depth: 0,
+						modifier: 1,
+						slideShadows: true,
+					}}
+					pagination={true}
+					modules={[EffectCoverflow, Pagination]}
+					className='w-full h-[205px] mt-10 text-center select-none '
+				>
+					<SwiperSlide className='shadow-md shadow-[#040c16] pt-10'>
 						<img
 							className='w-20 mx-auto'
 							src={HTML}
 							alt='HTML icon'
 						/>
 						<p className='my-4'>HTML</p>
-					</div>
-					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+					</SwiperSlide>
+					<SwiperSlide className='shadow-md shadow-[#040c16] pt-10'>
 						<img
 							className='w-20 mx-auto'
 							src={CSS}
 							alt='HTML icon'
 						/>
 						<p className='my-4'>CSS</p>
-					</div>
-					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+					</SwiperSlide>
+					<SwiperSlide className='shadow-md shadow-[#040c16] pt-10'>
 						<img
 							className='w-20 mx-auto rounded-[50%]'
 							src={Sass}
 							alt='HTML icon'
 						/>
 						<p className='my-4'>SASS</p>
-					</div>
-					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+					</SwiperSlide>
+					<SwiperSlide className='shadow-md shadow-[#040c16] pt-10'>
 						<img
 							className='w-20 mx-auto'
 							src={JavaScript}
 							alt='HTML icon'
 						/>
 						<p className='my-4'>JAVASCRIPT</p>
-					</div>
-					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+					</SwiperSlide>
+					<SwiperSlide className='shadow-md shadow-[#040c16] pt-10'>
 						<img
 							className='w-20 mx-auto'
 							src={Node}
 							alt='HTML icon'
 						/>
 						<p className='my-4'>NODE JS</p>
-					</div>
-					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+					</SwiperSlide>
+					<SwiperSlide className='shadow-md shadow-[#040c16] pt-10'>
 						<img
 							className='w-20 mx-auto'
 							src={GitHub}
 							alt='HTML icon'
 						/>
 						<p className='my-4'>GITHUB</p>
-					</div>
-					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+					</SwiperSlide>
+					<SwiperSlide className='shadow-md shadow-[#040c16] pt-10'>
 						<img
 							className='w-20 mx-auto'
 							src={ReactImg}
 							alt='HTML icon'
 						/>
 						<p className='my-4'>REACT</p>
-					</div>
-					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+					</SwiperSlide>
+					<SwiperSlide className='shadow-md shadow-[#040c16] pt-10'>
 						<img
 							className='w-20 mx-auto'
 							src={Tailwind}
 							alt='HTML icon'
 						/>
 						<p className='my-4'>TAILWIND</p>
-					</div>
-					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+					</SwiperSlide>
+					<SwiperSlide className='shadow-md shadow-[#040c16] pt-10'>
 						<img
 							className='w-20 mx-auto'
 							src={Next}
 							alt='HTML icon'
 						/>
 						<p className='my-4'>NEXT JS</p>
-					</div>
-					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+					</SwiperSlide>
+					<SwiperSlide className='shadow-md shadow-[#040c16] pt-10'>
 						<img
 							className='w-20 mx-auto'
 							src={Redux}
 							alt='HTML icon'
 						/>
 						<p className='my-4'>REDUX</p>
-					</div>
-					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+					</SwiperSlide>
+					<SwiperSlide className='shadow-md shadow-[#040c16] pt-10'>
 						<img
 							className='w-20 mx-auto'
 							src={Firebase}
 							alt='HTML icon'
 						/>
 						<p className='my-4'>FIREBASE</p>
-					</div>
-					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+					</SwiperSlide>
+					<SwiperSlide className='shadow-md shadow-[#040c16] pt-10'>
 						<img
 							className='w-20 mx-auto rounded-[50%]'
 							src={Typescript}
 							alt='HTML icon'
 						/>
 						<p className='my-4'>TYPESCRIPT</p>
-					</div>
-				</div>
+					</SwiperSlide>
+				</Swiper>
 			</div>
 		</div>
 	)

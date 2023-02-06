@@ -4,6 +4,7 @@ import LandingPage from '../assets/projects/landing-page.png'
 import RickAndMortyAPI from '../assets/projects/rick-and-morty-API.png'
 import TodoApp from '../assets/projects/notas.png'
 import FirebaseCrud from '../assets/projects/firebaseCrud.png'
+import GithubFetch from '../assets/projects/githubFetch.png'
 
 export const data = [
 	{
@@ -47,5 +48,12 @@ export const data = [
 		image: FirebaseCrud,
 		github: 'https://github.com/eliasvedovato/firebase-crud',
 		live: 'https://firebase-crud-psi.vercel.app/',
-	}
+	},
+	{
+		id: 7,
+		name: 'Github API with Zustand',
+		image: GithubFetch,
+		github: 'https://github.com/eliasvedovato/react-query-zustand',
+		live: 'https://react-query-zustand-three.vercel.app/',
+	},
 ]

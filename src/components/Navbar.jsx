@@ -9,9 +9,9 @@ const Navbar = () => {
 
 	return (
 		<div
-			className='fixed w-full h-[80px] 
+			className='fixed w-full h-[80px]
         flex justify-between items-center 
-        px-4 bg-[#0a192f] text-gray-300'
+        px-4 bg-[#0a192f] text-gray-300 z-10'
 		>
 			<div>
 				<Link to='home' smooth={true} duration={500} className='name-effect'>
@@ -48,7 +48,7 @@ const Navbar = () => {
 			</ul>
 
 			<div onClick={handleClick} className='sm:hidden z-10'>
-				{!nav ? <FaBars size={25} style={{cursor: 'pointer'}} /> : <FaTimes size={25} style={{cursor: 'pointer'}} />}
+				{!nav ? <FaBars size={25} style={{cursor: 'pointer', }} /> : <FaTimes size={25} style={{cursor: 'pointer'}} />}
 			</div>
 
 			{/* mobile menu */}
@@ -56,7 +56,7 @@ const Navbar = () => {
 				className={
 					!nav
 						? 'hidden'
-						: 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
+						: 'fixed top-0 left-0 w-full min-h-[400px] bg-[#10223c] flex flex-col md:flex-row justify-center items-center'
 				}
 			>
 				<li className='py-6 text-4xl hover:underline'>
@@ -69,7 +69,7 @@ const Navbar = () => {
 						Home
 					</Link>
 				</li>
-				<li className='py-6 text-4xl hover:underline'>
+				<li className='py-6 text-3xl hover:underline'>
 					{' '}
 					<Link
 						onClick={handleClick}
@@ -80,7 +80,7 @@ const Navbar = () => {
 						About
 					</Link>
 				</li>
-				<li className='py-6 text-4xl hover:underline'>
+				<li className='py-6 text-2xl hover:underline'>
 					{' '}
 					<Link
 						onClick={handleClick}
@@ -91,7 +91,7 @@ const Navbar = () => {
 						Skills
 					</Link>
 				</li>
-				<li className='py-6 text-4xl hover:underline'>
+				<li className='py-6 text-3xl hover:underline'>
 					{' '}
 					<Link
 						onClick={handleClick}

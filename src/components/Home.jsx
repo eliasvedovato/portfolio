@@ -1,11 +1,11 @@
-import React from 'react'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 
 import Me from '../assets/me/elias.jpg'
 
 const Home = () => {
+
 	return (
-		<div name='home' className='bg-[#0a192f] w-full h-screen'>
+		<div name='home' className='bg-[#0a192f] h-screen'>
 			<div
 				className='max-w-[1000px] mx-auto px-12 flex flex-col 
       		justify-center h-full text-white'
@@ -35,10 +35,10 @@ const Home = () => {
 			</div>
 
 			<img
-				className='absolute rounded-[50%] h-[200px] md:h-[250px] lg:h-[300px] 
-				xl:right-[25%] lg:right-[15%] md:right-[8%] top-[10%] right-[5%] shadow-picture'
+				className='absolute hidden md:visible max-w-[100%] rounded-[50%] h-[200px] md:h-[250px] lg:h-[300px] 
+					xl:right-[25%] lg:right-[15%] md:right-[8%] top-[10%] right-[5%] shadow-picture'
 				src={Me}
-				alt='profile picture'
+				alt=''
 			/>
 		</div>
 	)
