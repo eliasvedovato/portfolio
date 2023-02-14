@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaBars, FaTimes } from 'react-icons/fa'
 import { Link } from 'react-scroll'
 
 const Navbar = () => {
@@ -47,8 +47,8 @@ const Navbar = () => {
 				</li>
 			</ul>
 
-			<div onClick={handleClick} className='sm:hidden z-10'>
-				{!nav ? <FaBars size={25} style={{cursor: 'pointer', }} /> : <FaTimes size={25} style={{cursor: 'pointer'}} />}
+			<div onClick={handleClick} className='z-10'>
+				{!nav ? <FaBars size={25} className='sm:hidden' style={{cursor: 'pointer', }} /> : <FaTimes size={35} style={{cursor: 'pointer'}} />}
 			</div>
 
 			{/* mobile menu */}
@@ -56,7 +56,7 @@ const Navbar = () => {
 				className={
 					!nav
 						? 'hidden'
-						: 'fixed top-0 left-0 w-full min-h-[400px] bg-[#10223c] flex flex-col md:flex-row justify-center items-center'
+						: 'fixed top-0 left-0 w-full h-screen bg-[#10223c] flex flex-col md:flex-row justify-center items-center overflow-y-auto'
 				}
 			>
 				<li className='py-6 text-4xl hover:underline'>
@@ -69,7 +69,7 @@ const Navbar = () => {
 						Home
 					</Link>
 				</li>
-				<li className='py-6 text-3xl hover:underline'>
+				<li className='py-6 text-4xl hover:underline'>
 					{' '}
 					<Link
 						onClick={handleClick}
@@ -80,7 +80,7 @@ const Navbar = () => {
 						About
 					</Link>
 				</li>
-				<li className='py-6 text-2xl hover:underline'>
+				<li className='py-6 text-4xl hover:underline'>
 					{' '}
 					<Link
 						onClick={handleClick}
@@ -91,7 +91,7 @@ const Navbar = () => {
 						Skills
 					</Link>
 				</li>
-				<li className='py-6 text-3xl hover:underline'>
+				<li className='py-6 text-4xl hover:underline'>
 					{' '}
 					<Link
 						onClick={handleClick}
@@ -115,33 +115,7 @@ const Navbar = () => {
 				</li>
 			</ul>
 
-			{/* social icons */}
-			<div className='hidden lg:flex fixed flex-col top-[70%] left-0'>
-				<ul>
-					<li
-						className='w-[160px] h-[60px] flex justify-between items-center
-					ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'
-					>
-						<a
-							className='flex justify-between items-center w-full text-gray-300'
-							href='https://www.linkedin.com/in/elias-vedovato-3a35277a/'
-						>
-							Linkedin <FaLinkedin size={30} />
-						</a>
-					</li>
-					<li
-						className='w-[160px] h-[60px] flex justify-between items-center
-					ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'
-					>
-						<a
-							className='flex justify-between items-center w-full text-gray-300'
-							href='https://github.com/eliasvedovato'
-						>
-							Github <FaGithub size={30} />
-						</a>
-					</li>
-				</ul>
-			</div>
+
 		</div>
 	)
 }

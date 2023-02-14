@@ -1,9 +1,7 @@
-import { HiArrowNarrowRight } from 'react-icons/hi'
-
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import Me from '../assets/me/elias.jpg'
 
 const Home = () => {
-
 	return (
 		<div name='home' className='bg-[#0a192f] h-screen'>
 			<div
@@ -21,21 +19,34 @@ const Home = () => {
 					Currently, I'm focused on building resposive and exceptional
 					web applications
 				</p>
-				<div>
-					<button
-						className='text-white border-2 px-6 py-3 my-2 group
-          		flex items-center hover:bg-pink-600 hover:border-pink-600'
-					>
-						View my projects
-						<span className='group-hover:rotate-90 duration-300'>
-							<HiArrowNarrowRight className='ml-3' />
-						</span>
-					</button>
+
+				{/* social icons */}
+				<div className='mt-10'>
+					<ul className='flex flex-row justify-around'>
+						<li className='h-[60px] w-[60px] flex justify-between items-center bg-blue-600 hover:bg-blue-800 rounded-full'>
+							<a
+								className='text-gray-300'
+								href='https://www.linkedin.com/in/elias-vedovato-3a35277a/'
+								target='_blank'
+							>
+								<FaLinkedin size={30} />
+							</a>
+						</li>
+						<li className=' h-[60px] w-[60px] flex justify-between items-center bg-[#333333] hover:bg-[#222] rounded-full'>
+							<a
+								className='text-gray-300'
+								href='https://github.com/eliasvedovato'
+								target='_blank'
+							>
+								<FaGithub size={30} />
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 
 			<img
-				className='absolute hidden md:visible max-w-[100%] rounded-[50%] h-[200px] md:h-[250px] lg:h-[300px] 
+				className='absolute md:visible max-w-[100%] rounded-[50%] h-[200px] md:h-[250px] lg:h-[300px] 
 					xl:right-[25%] lg:right-[15%] md:right-[8%] top-[10%] right-[5%] shadow-picture'
 				src={Me}
 				alt=''
