@@ -5,9 +5,15 @@ const Home = () => {
 	return (
 		<div name='home' className='bg-[#0a192f] h-screen'>
 			<div
-				className='mx-auto px-12 lg:px-40 flex flex-col 
-      		justify-center items-center h-full text-white pt-16'
+				className='mx-auto px-12 lg:px-40 flex flex-col gap-4
+      		justify-center items-center h-full text-white py-10'
 			>
+				<img
+					className='rounded-[50%] h-[200px] md:h-[250px] lg:h-[300px] 
+					shadow-picture'
+					src={Me}
+					alt=''
+				/>
 				<h4 className='text-pink-600 font-bold z-10'>Hi, my name is</h4>
 				<h1 className='text-4xl sm:text-7xl font-bold text-blue-700 z-10'>
 					Elias Vedovato
@@ -48,14 +54,6 @@ const Home = () => {
 					</ul>
 				</div>
 			</div>
-
-			<img
-				className='absolute md:visible max-w-[100%] rounded-[50%] h-[200px] md:h-[250px] lg:h-[300px] 
-					xl:right-[25%] lg:right-[25%] md:right-[20%] sm:right-[15%] right-[10%] top-[15%] 
-					md:top-[15%] shadow-picture'
-				src={Me}
-				alt=''
-			/>
 		</div>
 	)
 }
