@@ -10,6 +10,7 @@ import Redux from '../assets/redux.png'
 import Firebase from '../assets/firebase.png'
 import Sass from '../assets/sass.png'
 import Typescript from '../assets/typescript.svg'
+import MongoDB from '../assets/MongoDB.png'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -150,6 +151,14 @@ const Skills = () => {
 							alt='HTML icon'
 						/>
 						<p className='my-4'>TYPESCRIPT</p>
+					</SwiperSlide>
+					<SwiperSlide className='shadow-md shadow-[#040c16] pt-10'>
+						<img
+							className='w-20 mx-auto bg-white rounded-[50%]'
+							src={MongoDB}
+							alt='HTML icon'
+						/>
+						<p className='my-4'>MONGODB</p>
 					</SwiperSlide>
 				</Swiper>
 			</div>
