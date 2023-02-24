@@ -40,7 +40,7 @@ const Contact = () => {
 				<textarea
 					className='bg-[#ccd6f6] p-2'
 					name='message'
-					rows='10'
+					rows='8'
 					placeholder='Message'
 					required
 				></textarea>
