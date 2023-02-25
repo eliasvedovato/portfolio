@@ -28,6 +28,7 @@ const Skills = () => {
 		<div
 			name='skills'
 			className='w-full h-screen bg-[#132d54] text-gray-300'
+			style={{ clipPath: 'polygon(30% 0%, 70% 0%, 100% 5%, 100% 95%, 70% 100%, 30% 100%, 0 95%, 0 5%)'}}
 		>
 			{/* Container */}
 			<div className='max-w-[1000px] mx-auto p-12 flex flex-col justify-center w-full h-full'>

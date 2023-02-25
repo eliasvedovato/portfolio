@@ -16,7 +16,7 @@ const Work = () => {
 	const project = data
 
 	return (
-		<div name='work' className='w-full h-screen text-gray-300 bg-[#0e3979]'>
+		<div name='work' className='w-full h-screen text-gray-300 bg-[#0f2749]'>
 			<div
 				className='max-w-[1000px] mx-auto p-12 flex flex-col 
       	justify-center w-full h-full'

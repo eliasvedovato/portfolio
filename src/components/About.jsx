@@ -16,14 +16,11 @@ const About = () => {
 					<div></div>
 				</div>
 				<div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
-					<div className='sm:text-right text-xl md:text-4xl font-bold'>
-						<p>
+						<p className='text-2xl xl:text-4xl font-bold sm:text-right'>
 							Hi. I'm Elias Vedovato, nice to meet you. I live in Argentina, Buenos Aires. 
-							I'm a self-taught developer who has the ability to continusly learn different skills
+							I'm a self-taught developer who likes to continusly learn different skills
 						</p>
-					</div>
-					<div>
-						<p>
+						<p className='xl:text-2xl'>
 							I am passionate about building responsive web pages
 							that improves the lives of those around me. I am actually 
 							learning Typescript and state managers in React. 
@@ -31,7 +28,6 @@ const About = () => {
 							you had a software expert available at your
 							fingertips?
 						</p>
-					</div>
 				</div>
 			</div>
 		</div>
