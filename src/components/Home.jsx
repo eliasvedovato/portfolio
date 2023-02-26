@@ -6,15 +6,14 @@ const Home = () => {
 		<div
 			name='home'
 			className='bg-[#0a192f] h-screen'
-			style={{ clipPath: 'ellipse(110% 90% at 40% 5%)'}}
+			style={{ clipPath: 'ellipse(110% 90% at 40% 5%)' }}
 		>
 			<div
 				className='mx-auto px-12 lg:px-40 flex flex-col gap-4
       		justify-center items-center h-full text-white py-10'
 			>
 				<img
-					className='rounded-[50%] h-[200px] md:h-[250px] lg:h-[300px] 
-					shadow-picture'
+					className='rounded-[50%] h-[200px] md:h-[250px] shadow-picture'
 					src={Me}
 					alt=''
 				/>
@@ -33,9 +32,10 @@ const Home = () => {
 				{/* social icons */}
 				<div className='mt-10'>
 					<ul className='flex flex-row gap-10 md:flex-row-reverse'>
-						<li 
+						<li
 							className='h-[60px] w-[60px] flex justify-between 
-							items-center bg-blue-600 hover:bg-blue-800 rounded-full'>
+							items-center bg-blue-600 hover:bg-blue-800 rounded-full'
+						>
 							<a
 								className='text-gray-300'
 								href='https://www.linkedin.com/in/elias-vedovato-3a35277a/'
@@ -46,9 +46,10 @@ const Home = () => {
 								<FaLinkedin size={30} />
 							</a>
 						</li>
-						<li 
+						<li
 							className=' h-[60px] w-[60px] flex justify-between items-center 
-						bg-[#333333] hover:bg-[#222] rounded-full'>
+						bg-[#333333] hover:bg-[#222] rounded-full'
+						>
 							<a
 								className='text-gray-300'
 								href='https://github.com/eliasvedovato'

@@ -40,43 +40,36 @@ const Work = () => {
 				>
 					{/* Grid Item */}
 					{project.map((item, index) => (
-							<SwiperSlide
-								key={index}
-								style={{backgroundImage: `url(${item.image})`}}
-								className='rounded-lg flex justify-center content-div'
-								>
-								{/* Hover effect for images */}
-								{/* <div className='opacity-0 group-hover:opacity-100'>
-									<span className='text-2xl font bold text-white tracking-wider'>
-										{item.name}
-									</span>
-								</div> */}
-
-								<div className='text-center flex justify-center absolute bottom-[15px]'>
-									{/* eslint-disable-next-line */}
-									<a href={item.github} target='_blank'>
-										<button
-											className='text-center rounded-lg px-4 py-2 m-2
+						<SwiperSlide
+							key={index}
+							style={{ backgroundImage: `url(${item.image})` }}
+							className='rounded-lg flex justify-center content-div'
+						>
+							<div className='text-center flex justify-center absolute bottom-[15px]'>
+								{/* eslint-disable-next-line */}
+								<a href={item.github} target='_blank'>
+									<button
+										className='text-center rounded-lg px-4 py-2 m-2
                      bg-gray-600 hover:bg-gray-400 text-white font-bold text-lg'
-										>
-											Github
-										</button>
-									</a>
-									{/* eslint-disable-next-line */}
-									<a
-										href={item.live}
-										className=''
-										target='_blank'
 									>
-										<button
-											className='text-center rounded-lg px-4 py-2 m-2
+										Github
+									</button>
+								</a>
+								{/* eslint-disable-next-line */}
+								<a
+									href={item.live}
+									className=''
+									target='_blank'
+								>
+									<button
+										className='text-center rounded-lg px-4 py-2 m-2
                     bg-blue-600 hover:bg-blue-400 text-white font-bold text-lg'
-										>
-											Live
-										</button>
-									</a>
-								</div>
-							</SwiperSlide>
+									>
+										Live
+									</button>
+								</a>
+							</div>
+						</SwiperSlide>
 					))}
 				</Swiper>
 			</div>
