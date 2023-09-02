@@ -3,7 +3,7 @@ import WatchesEcomm from '../assets/projects/watches-website.png'
 import LandingPage from '../assets/projects/landing-page.png'
 import RickAndMortyAPI from '../assets/projects/rick-and-morty-API.png'
 import TodoApp from '../assets/projects/notas.png'
-import GithubFetch from '../assets/projects/githubFetch.png'
+import FakeStoreApi from '../assets/projects/fake_store_api.png'
 
 export const data = [
 	{
@@ -43,9 +43,9 @@ export const data = [
 	},
 	{
 		id: 6,
-		name: 'Github API with Zustand',
-		image: GithubFetch,
-		github: 'https://github.com/eliasvedovato/react-query-zustand',
-		live: 'https://react-query-zustand-three.vercel.app/',
+		name: 'Fake Store API',
+		image: FakeStoreApi,
+		github: 'https://github.com/eliasvedovato/fake_store_api',
+		live: 'https://fake-store-api-lyart.vercel.app/',
 	},
 ]
